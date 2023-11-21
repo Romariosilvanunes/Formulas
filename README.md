@@ -1,18 +1,24 @@
-## Getting Started
+"Interface é como classes abstratas com métodos sem corpo, ou seja, uma interface não especifica como fazer algo, mas o que deve ser feito. Além disso, tem como diferença fundamental em relação a uma classe o fato de seus métodos não possuírem corpo com instruções, sem implementação."
+TAKUMOTO, R. C. Programação de Sistemas II. Maringá - PR.: Unicesumar, 2018. 109p.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Sabendo disso analise a interface abaixo:
 
-## Folder Structure
+public interface Formulas {
+    
+    public Double calcularAreaQuadrado(Double largura, Double altura);
+    
+    public Double calcularAreaCirculo(Double raio);
+    
+    public Double calcularAreaLosango(Double diagonalMenor, Double diagonalMaior);
+    
+    public Double calcularAreaTriangulo(Double base, Double altura);
+    
+    public Double calcularAreaTrapezio(Double baseMaior, Double baseMenor, Double altura);
+    
+}
+ 
+Agora faça uma classe implementando os métodos da Interface, o código deve ser inserido na resposta de forma textual, sem necessidade de enviar o código em anexo.
 
-The workspace contains two folders by default, where:
+Complementando o código da classe, justifique situações em que se faz necessário o uso da Interface.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Material auxiliar para fórmulas:
